@@ -406,9 +406,10 @@
                 </li>
               </ul>
       </div>
-      <div class="footer-form">
-        <p class="footer-text list">Підпишиться на розсилку</p>
+      
+        
       <form class="subscribe-form">
+        <p class="footer-text list">Підпишиться на розсилку</p>
         <div class="form-field">
         <label type="email" class="form-label"></label>
           <input type="email" class="form-input" name="email" placeholder="E-mail" />
@@ -421,7 +422,7 @@
           </button>
         </div>
       </form>
-      </div>
+      
       </div> 
     </footer>
      <div class="backdrop is-hidden" data-modal>
@@ -434,9 +435,9 @@
          <p class="text-modal">Залиште свої дані, ми вам передзвонимо</p>
         <form class= "modal-form">
           <div class="form-field-modal">
-            <label for="text" class="form-label-modal"><span>Ім'я</span></label>
+            <label for="text" class="form-label-modal">Ім'я</label>
             <div class="input-wrap">
-            <input type="text" class="form-input-modal" name="name" id="name" placeholder=" " />
+            <input type="text" class="form-input-modal" name="name" id="name" placeholder=" " required/>
             <svg class="icon-modal" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
@@ -444,7 +445,7 @@
           </div>
 
            <div class="form-field-modal">
-            <label for="tel" class="form-label-modal"><span>Телефон</span></label>
+            <label for="tel" class="form-label-modal">Телефон</label>
             <div class="input-wrap">
             <input type="tel" class="form-input-modal" name="tel" id="tel" placeholder=" " required/>
             <svg class="icon-modal" width="18px" height="18px">
@@ -454,9 +455,9 @@
           </div>
 
            <div class="form-field-modal">
-            <label for="email" class="form-label-modal"><span>Пошта</span></label>
+            <label for="email" class="form-label-modal">Пошта</label>
             <div class="input-wrap">
-            <input type="email" class="form-input-modal" name="mail" id="mail" placeholder=" " />
+            <input type="email" class="form-input-modal" name="mail" id="mail" placeholder=" " required/>
             <svg class="icon-modal" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-email-black"></use>
             </svg>
@@ -464,13 +465,13 @@
           </div>
 
            <div class="form-field-modal">
-            <label class="form-label-modal"><span>Коментар</span></label>
+            <label class="form-label-modal">Коментар</label>
             <textarea name="feedback" class="text-feedback" placeholder ="Введіть текст"></textarea>
            </div>
            
             <div class="form-field-modal">
-            <input type="checkbox" name="privacy" id="privacy" class="check-input visually-hidden"/>
-            <label for="privacy" class="check-label">Погоджуюся з розсилкою та приймаю &nbsp<a href="#" class="check-link">Умови договору</a>
+            <input type="checkbox" name="privacy" id="privacy" class="check-input visually-hidden" required/>
+            <label for="privacy" class="check-label">Погоджуюся з розсилкою та приймаю<a href="#" class="check-link">Умови договору</a>
            </label>
            </div>
           
